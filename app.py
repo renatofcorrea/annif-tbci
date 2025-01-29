@@ -1,5 +1,4 @@
-from flask import Flask
-import connexion
+from flask import Flask, connexion
 import subprocess
 import os
 
