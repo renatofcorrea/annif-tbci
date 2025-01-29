@@ -1,11 +1,10 @@
-from flask import Flask, connexion
+from flask import Flask
+#import connexion
 import subprocess
 import os
 
 app = Flask(__name__)
-connexion_app = connexion.FlaskApp(__name__, specification_dir='./')
-# Adicionar suas rotas e especificações de API
-#connexion_app.add_api('swagger.yaml')
+#connexion_app = connexion.FlaskApp(__name__, specification_dir='./')
 
 @app.route("//workspaces/codespaces-flask/annif-venv/")
 def hello_world():

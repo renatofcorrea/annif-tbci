@@ -1,16 +1,13 @@
 {
-  "name": "Annif Project",
+  "name": "Annif-TBCI",
   "image": "mcr.microsoft.com/vscode/devcontainers/python:0-3.9",
   "hostRequirements": {
     "cpus": 4
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "pip install -r requirements.txt",
-  "postCreateCommand": "python3 -m venv annif-venv && . annif-venv/bin/activate && pip install annif flask uvicorn",
+  "postCreateCommand": ". annif-venv/bin/activate && pip install annif flask uvicorn",
   "postStartCommand": ". annif-venv/bin/activate && python app.py",
-  "postAttachCommand": {
-    "server": "flask --debug run"
-  },
   "portsAttributes": {
     "8000": {
       "label": "Application",
