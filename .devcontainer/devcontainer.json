@@ -1,18 +1,21 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "name": "Annif Project",
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:0-3.9",
   "hostRequirements": {
     "cpus": 4
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "pip install -r requirements.txt",
-  "postCreateCommand": "",
+  "postCreateCommand": "python3 -m venv annif-venv && . annif-venv/bin/activate && pip install annif flask uvicorn",
+  "postStartCommand": ". annif-venv/bin/activate && python app.py",
   "postAttachCommand": {
     "server": "flask --debug run"
   },
   "portsAttributes": {
-    "5000": {
+    "8000": {
       "label": "Application",
-      "onAutoForward": "openPreview"
+      "onAutoForward": "openPreview",
+      "visibility": "public"
     }
   },
   "customizations": {
@@ -27,5 +30,8 @@
       ]
     }
   },
-  "forwardPorts": [5000]
+  "forwardPorts": [8000],
+  "remoteEnv": {
+    "PORT": "8000"
+  }
 }
