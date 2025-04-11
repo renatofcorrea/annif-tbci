@@ -9,3 +9,7 @@ To run this application:
 ```
 flask --debug run
 ```
+Or execute in TERMINAL the command:
+```
+bash run-script.sh
+```
