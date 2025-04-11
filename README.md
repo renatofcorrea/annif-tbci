@@ -10,7 +10,7 @@ To run this application:
 flask --debug run
 ```
 
-Or execute in TERMINAL the command:
+Or execute in the Codespaces' TERMINAL the command:
 
 ```
 bash run-script.sh
