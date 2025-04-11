@@ -6,7 +6,7 @@
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "source annif-venv/bin/activate && pip install -r requirements.txt",
-  "postCreateCommand": "cd annif-venv && source bin/activate && pip install annif flask uvicorn",
+  "postCreateCommand": "source annif-venv/bin/activate && pip install annif flask uvicorn",
   "postStartCommand": "bash run-script.sh",
   "portsAttributes": {
     "8000": {
