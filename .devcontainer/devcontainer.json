@@ -5,9 +5,9 @@
     "cpus": 4
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "pip install -r requirements.txt",
-  "postCreateCommand": ". annif-venv/bin/activate && pip install annif flask uvicorn",
-  "postStartCommand": ". annif-venv/bin/activate && python app.py",
+  "updateContentCommand": "source annif-venv/bin/activate && pip install -r requirements.txt",
+  "postCreateCommand": "cd annif-venv && source annif-venv/bin/activate && pip install annif flask uvicorn",
+  "postStartCommand": "cd annif-venv && source annif-venv/bin/activate && annif run",
   "portsAttributes": {
     "8000": {
       "label": "Application",
