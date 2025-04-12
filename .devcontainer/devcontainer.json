@@ -15,6 +15,8 @@
       "visibility": "public"
     }
   },
+  "forwardPorts": [8000],
+  "remoteEnv": { "PORT": "8000" },
   "customizations": {
     "codespaces": {
       "openFiles": [
@@ -26,9 +28,5 @@
         "ms-python.python"
       ]
     }
-  },
-  "forwardPorts": [8000],
-  "remoteEnv": {
-    "PORT": "8000"
   }
 }
