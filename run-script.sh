@@ -17,4 +17,4 @@ source bin/activate
 #annif run --host 0.0.0.0 --port 8000
 
 # Execute o aplicativo Python (app.py)
-python app.py
+python ../app.py
