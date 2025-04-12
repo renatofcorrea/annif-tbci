@@ -21,9 +21,6 @@ def home():
     subprocess.run(command, shell=True, check=True)
     return "Executando o Annif!"
 
-def hello_world():
-    return 'Hello World!'
-
 if __name__ == '__main__':
     # Configurar a porta pública padrão
     port = int(os.environ.get('PORT', 8000))
