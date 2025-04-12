@@ -10,7 +10,7 @@
   "postStartCommand": "bash run-script.sh",
   "portsAttributes": {
     "8000": {
-      "label": "Application",
+      "label": "Annif Application",
       "onAutoForward": "openPreview",
       "visibility": "public"
     }
