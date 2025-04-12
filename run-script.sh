@@ -14,7 +14,7 @@ cd annif-venv
 source bin/activate
 
 # Executa o servidor na porta 8000 e o torna público (comando no app.py)
-#annif run --host 0.0.0.0 --port 8000
+annif run --host 0.0.0.0 --port 8000
 
 # Execute o aplicativo Python (app.py)
 python ../app.py
